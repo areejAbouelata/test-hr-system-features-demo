@@ -1,0 +1,18 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"allowJs": true,
+		"sourceMap": true,
+		"outDir": "./public/build/assets",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"paths": {
+			"ziggy-js": ["./vendor/tightenco/ziggy"],
+			"@/*": ["resources/js/*"],
+			"@finance/*": ["Modules/Finance/resources/js/*"],
+			"@hr/*": ["Modules/Hr/resources/js/*"]
+		},
+		"allowImportingTsExtensions": true
+	},
+	"exclude": ["node_modules", "public", "vendor"]
+}
